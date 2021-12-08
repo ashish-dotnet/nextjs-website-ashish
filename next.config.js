@@ -1,3 +1,5 @@
 module.exports = {
-  reactStrictMode: true,
+  basePath:'/nextjs-website-ashish',
+  assetPrefix:'/nextjs-website-ashish'
+  
 }
