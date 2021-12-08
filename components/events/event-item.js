@@ -7,7 +7,7 @@ import ArrowIcon from '../icons/arrow-right-icon'
 
 function EventItem(props) {
     const { title, image, date, location, id } = props;
-    const prefix = '/nextjs-website-ashish/events/'
+    const prefix = 'nextjs-website-ashish/events/'
     const humanReadalbeDate = new Date(date).toLocaleDateString('en-US', {
         day: 'numeric',
         month: 'long',
