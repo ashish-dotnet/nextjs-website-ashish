@@ -7,6 +7,7 @@ import ArrowIcon from '../icons/arrow-right-icon'
 
 function EventItem(props) {
     const { title, image, date, location, id } = props;
+    const prefix = '/nextjs-website-ashish/events/'
     const humanReadalbeDate = new Date(date).toLocaleDateString('en-US', {
         day: 'numeric',
         month: 'long',
@@ -15,7 +16,7 @@ function EventItem(props) {
     const formateAddress = location.replace(',', '\n');
     const exploreLink = `/events/${id}`;
     return (<li className={classes.item}>
-        <img src={'/' + image} alt={title} />
+        <img src={'/' + prefix+ image} alt={title} />
         <div className={classes.summary}>
             <div>
                 <h2>{title}</h2>
