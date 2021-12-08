@@ -16,7 +16,7 @@ function EventItem(props) {
     const formateAddress = location.replace(',', '\n');
     const exploreLink = `/events/${id}`;
     return (<li className={classes.item}>
-        <img src={'/' + prefix+ image} alt={title} />
+        <img src={'/'+prefix+image} alt={title} />
         <div className={classes.summary}>
             <div>
                 <h2>{title}</h2>
